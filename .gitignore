@@ -1,0 +1,4 @@
+# Vercel local link metadata (created by `vercel link`)
+.vercel/
+
+node_modules/

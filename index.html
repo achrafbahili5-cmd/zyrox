@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Zyrox — Young Entrepreneur &amp; Digital Product Builder | Tetouan, Morocco</title>
+  <meta name="description" content="Zyrox — young entrepreneur and digital product builder from Tetouan, Morocco. Student founder, co-founder of Tapzio, smart NFC business cards.">
+  <meta name="theme-color" content="#05070c">
+  <meta property="og:title" content="Zyrox — Young Entrepreneur & Digital Product Builder">
+  <meta property="og:description" content="Student entrepreneur from Tetouan, Morocco. Building real digital products with friends. Co-founder of Tapzio.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070a12'/%3E%3Cpath d='M19 7 14 30 23 49 32 57 41 49 50 30 45 7 36 17 32 23 28 17Z' fill='none' stroke='%2300f5a0' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ======================= SVG DEFS: logo (used in navbar, hero, footer) ======================= -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="silverGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#ffffff"/>
+        <stop offset="0.55" stop-color="#c8d0de"/>
+        <stop offset="1" stop-color="#8d96a9"/>
+      </linearGradient>
+      <symbol id="zyrox-fox" viewBox="0 0 64 64">
+        <g fill="none" stroke="url(#silverGrad)" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M19 7 14 30 23 49 32 57 41 49 50 30 45 7 36 17 32 23 28 17Z"/>
+          <path d="M26 20 24 34 32 43 40 34 38 20"/>
+          <path d="M28.5 47 32 51.5 35.5 47"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ======================= NAVBAR ======================= -->
+  <header class="navbar" id="navbar">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#hero" class="brand">
+        <svg class="brand-logo" viewBox="0 0 64 64" aria-hidden="true"><use href="#zyrox-fox"></use></svg>
+        <span class="brand-name">ZYROX<span class="brand-dot">.</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#tapzio">Tapzio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-cta">
+          <a class="btn btn-primary btn-sm" href="https://tapzio-ma.vercel.app" target="_blank" rel="noopener">
+            See My Project
+            <svg class="btn-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+        </li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ======================= HERO ======================= -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="glow glow-a"></span>
+        <span class="glow glow-b"></span>
+        <span class="hero-grid"></span>
+      </div>
+
+      <div class="container hero-inner stagger">
+        <div class="hero-logo reveal">
+          <svg viewBox="0 0 64 64" role="img" aria-label="Zyrox logo"><use href="#zyrox-fox"></use></svg>
+        </div>
+
+        <p class="hero-location reveal">
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Tetouan, Morocco
+        </p>
+
+        <h1 class="hero-title reveal">
+          <span class="hero-name">Zyrox</span>
+          <span class="hero-line">— Young Entrepreneur &amp; <span class="grad">Digital Product Builder</span> from Tetouan, Morocco</span>
+        </h1>
+
+        <p class="hero-sub reveal">
+          Student entrepreneur building real products with friends to fund our studies —
+          learning business the fastest way possible: by doing it.
+        </p>
+
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="https://tapzio-ma.vercel.app" target="_blank" rel="noopener">
+            See My Project
+            <svg class="btn-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="https://wa.me/212684759180" target="_blank" rel="noopener">
+            Contact Me
+            <svg class="btn-ic btn-ic-fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.464 3.488"/></svg>
+          </a>
+        </div>
+
+        <a class="scroll-hint reveal" href="#about" aria-label="Scroll to About section">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ======================= ABOUT ======================= -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span>About me</p>
+          <h2 id="about-title">Learning by building — <span class="grad">every single day</span>.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="lead reveal">
+              I'm Zyrox, a student entrepreneur from Tetouan, Morocco. While I study at a
+              boarding school, I'm building real businesses with my friends to fund our
+              studies — no waiting, no excuses.
+            </p>
+            <p class="reveal">
+              Together we design and ship digital products people can actually use. Co-founder
+              of <strong>Tapzio</strong>, a smart NFC business card, I spend my days learning how
+              digital products are made, marketed and sold — then applying it all to the next
+              project.
+            </p>
+            <p class="reveal">
+              Every project teaches us something. Every small win pays for the next term.
+              And the dream keeps growing: build the skills, ship the products, and one day
+              build a large tech business from Morocco.
+            </p>
+            <div class="about-tags reveal">
+              <span class="tag">Student</span>
+              <span class="tag">Builder</span>
+              <span class="tag">Founder</span>
+              <span class="tag">Self-taught</span>
+            </div>
+          </div>
+
+          <div class="about-cards stagger">
+            <article class="info-card reveal">
+              <span class="info-icon">
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </span>
+              <div>
+                <h3>Based in Tetouan</h3>
+                <p>Studying at a boarding school in Tetouan, Morocco — building on the side, every day.</p>
+              </div>
+            </article>
+
+            <article class="info-card reveal">
+              <span class="info-icon">
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.6 2.7 3 6 3s6-1.4 6-3v-4.5"/></svg>
+              </span>
+              <div>
+                <h3>Student entrepreneur</h3>
+                <p>Learning business the hard way — by doing it, funding school with real projects.</p>
+              </div>
+            </article>
+
+            <article class="info-card reveal">
+              <span class="info-icon">
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>
+              </span>
+              <div>
+                <h3>Co-founder of Tapzio</h3>
+                <p>A smart NFC business card project, built with friends — my first real product.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= TAPZIO ======================= -->
+    <section class="section section-alt" id="tapzio" aria-labelledby="tapzio-title">
+      <div class="container">
+        <div class="project-grid">
+          <div class="project-media reveal">
+            <!-- Swap this placeholder with a real screenshot:
+                 <img src="assets/tapzio.png" alt="Tapzio smart NFC business card" loading="lazy"> -->
+            <div class="visual">
+              <svg class="visual-art" viewBox="0 0 420 300" aria-label="Illustration: a phone tapping an NFC business card" role="img">
+                <defs>
+                  <linearGradient id="vCard" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#111a2e"/><stop offset="1" stop-color="#0a0f1e"/>
+                  </linearGradient>
+                  <linearGradient id="vBtn" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0" stop-color="#00f5a0"/><stop offset="1" stop-color="#00d9d0"/>
+                  </linearGradient>
+                  <radialGradient id="vGlow" cx="0.5" cy="0.5" r="0.5">
+                    <stop offset="0" stop-color="#00f5a0" stop-opacity="0.28"/>
+                    <stop offset="1" stop-color="#00f5a0" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+
+                <ellipse cx="210" cy="150" rx="170" ry="110" fill="url(#vGlow)"/>
+
+                <!-- NFC card -->
+                <g transform="translate(48 92) rotate(-8 75 48)">
+                  <rect width="150" height="96" rx="14" fill="url(#vCard)" stroke="#243252" stroke-width="1.5"/>
+                  <rect x="18" y="26" width="28" height="21" rx="5" fill="#00f5a0" fill-opacity="0.18" stroke="#00f5a0" stroke-opacity="0.55"/>
+                  <path d="M26 26v21M38 26v21M18 36.5h28" stroke="#00f5a0" stroke-opacity="0.55" stroke-width="1.2"/>
+                  <text x="18" y="70" font-family="Sora, sans-serif" font-size="14" font-weight="700" fill="#e9eef8" letter-spacing="2">TAPZIO</text>
+                  <g stroke="#8fa0c2" stroke-width="1.6" fill="none" stroke-linecap="round">
+                    <path d="M112 34a10 10 0 0 1 0 14"/>
+                    <path d="M118 29a17 17 0 0 1 0 24"/>
+                  </g>
+                </g>
+
+                <!-- signal waves -->
+                <g stroke="url(#vBtn)" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.9">
+                  <path d="M226 128a34 34 0 0 1 0 46"/>
+                  <path d="M242 116a54 54 0 0 1 0 70" opacity="0.6"/>
+                  <path d="M258 104a74 74 0 0 1 0 94" opacity="0.3"/>
+                </g>
+
+                <!-- phone -->
+                <g transform="translate(296 56)">
+                  <rect width="92" height="188" rx="18" fill="#0c1220" stroke="#2a3550" stroke-width="1.5"/>
+                  <rect x="34" y="10" width="24" height="5" rx="2.5" fill="#1b2438"/>
+                  <rect x="9" y="24" width="74" height="150" rx="11" fill="#060a12"/>
+                  <circle cx="46" cy="58" r="16" fill="#00f5a0" fill-opacity="0.16"/>
+                  <circle cx="46" cy="53" r="5.5" fill="#00f5a0" fill-opacity="0.8"/>
+                  <path d="M37 67a9 9 0 0 1 18 0" fill="#00f5a0" fill-opacity="0.8"/>
+                  <rect x="24" y="86" width="44" height="7" rx="3.5" fill="#33405f"/>
+                  <rect x="30" y="99" width="32" height="6" rx="3" fill="#232e48"/>
+                  <rect x="17" y="118" width="58" height="18" rx="9" fill="url(#vBtn)"/>
+                  <rect x="17" y="144" width="58" height="18" rx="9" fill="#1b2438"/>
+                </g>
+              </svg>
+              <p class="visual-caption">Tap the card. Share everything.</p>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="section-head reveal">
+              <p class="eyebrow"><span class="eyebrow-line"></span>Featured project</p>
+              <h2 id="tapzio-title">Tapzio <span class="grad">— a business card that never runs out</span>.</h2>
+            </div>
+
+            <p class="lead reveal">
+              Tapzio is a smart NFC business card. Tap it with any phone and it instantly
+              shares your contact info, social links, and website — no app, no paper,
+              no reprints.
+            </p>
+
+            <ul class="features stagger">
+              <li class="reveal">
+                <span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4 10-10"/></svg></span>
+                <span><strong>Tap &amp; share instantly</strong> — contact info, social links and website in one tap.</span>
+              </li>
+              <li class="reveal">
+                <span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4 10-10"/></svg></span>
+                <span><strong>Works with any phone</strong> — NFC-enabled smartphones read it instantly, no app needed.</span>
+              </li>
+              <li class="reveal">
+                <span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4 10-10"/></svg></span>
+                <span><strong>Never runs out</strong> — no paper cards, no reprints, no “I ran out of cards”.</span>
+              </li>
+              <li class="reveal">
+                <span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4 10-10"/></svg></span>
+                <span><strong>One card for everything</strong> — your whole digital identity, in your wallet.</span>
+              </li>
+            </ul>
+
+            <div class="project-cta reveal">
+              <a class="btn btn-primary" href="https://tapzio-ma.vercel.app" target="_blank" rel="noopener">
+                Visit Tapzio
+                <svg class="btn-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+              </a>
+              <span class="project-url">tapzio-ma.vercel.app</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SKILLS ======================= -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span>Skills &amp; interests</p>
+          <h2 id="skills-title">Everything I'm <span class="grad">obsessed</span> with right now.</h2>
+        </div>
+
+        <div class="skills-grid stagger">
+          <article class="skill-card reveal">
+            <span class="skill-icon">
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></svg>
+            </span>
+            <h3>Digital products</h3>
+            <p>Designing, building and shipping products people actually use.</p>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="skill-icon">
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="7" height="16" rx="2"/><path d="M13 9a4 4 0 0 1 0 6"/><path d="M16 6.5a8 8 0 0 1 0 11"/><path d="M19 4a12 12 0 0 1 0 16"/></svg>
+            </span>
+            <h3>NFC technology</h3>
+            <p>Tap-to-share hardware and physical-digital experiences with Tapzio.</p>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="skill-icon">
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/></svg>
+            </span>
+            <h3>Entrepreneurship</h3>
+            <p>Turning ideas into real businesses while still a student.</p>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="skill-icon">
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l6 4V5L8 9H4z"/><path d="M17.5 8.5a5 5 0 0 1 0 7"/></svg>
+            </span>
+            <h3>Marketing</h3>
+            <p>Getting products in front of the right people, on any budget.</p>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="skill-icon">
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17.2" cy="9.2" r="2.6"/><path d="M16.4 14.6A5.6 5.6 0 0 1 21 20"/></svg>
+            </span>
+            <h3>Teamwork</h3>
+            <p>Building with friends — clear roles, fast shipping, shared wins.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CONTACT ======================= -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div class="section-head section-head-center">
+            <p class="eyebrow"><span class="eyebrow-line"></span>Contact</p>
+            <h2 id="contact-title">Have an idea? <span class="grad">Let's talk.</span></h2>
+            <p class="section-sub">Message me on WhatsApp, follow the journey on Instagram, or check out Tapzio.</p>
+          </div>
+
+          <div class="contact-grid stagger">
+            <a class="contact-card is-primary reveal" href="https://wa.me/212684759180" target="_blank" rel="noopener">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.464 3.488"/></svg>
+              </span>
+              <span class="contact-text">
+                <span class="contact-label">WhatsApp — main</span>
+                <span class="contact-value">+212 684-759180</span>
+              </span>
+              <svg class="contact-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+
+            <a class="contact-card reveal" href="https://wa.me/212726494835" target="_blank" rel="noopener">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.464 3.488"/></svg>
+              </span>
+              <span class="contact-text">
+                <span class="contact-label">WhatsApp — second line</span>
+                <span class="contact-value">+212 726-494835</span>
+              </span>
+              <svg class="contact-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+
+            <a class="contact-card reveal" href="https://instagram.com/sharaf.gym.44" target="_blank" rel="noopener">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 0 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
+              </span>
+              <span class="contact-text">
+                <span class="contact-label">Instagram</span>
+                <span class="contact-value">@sharaf.gym.44</span>
+              </span>
+              <svg class="contact-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+
+            <a class="contact-card reveal" href="https://tapzio-ma.vercel.app" target="_blank" rel="noopener">
+              <span class="contact-icon">
+                <svg class="line" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3A5 5 0 0 0 13 3.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3A5 5 0 0 0 11 20.93l1.5-1.5"/></svg>
+              </span>
+              <span class="contact-text">
+                <span class="contact-label">Project website</span>
+                <span class="contact-value">tapzio-ma.vercel.app</span>
+              </span>
+              <svg class="contact-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="brand">
+            <svg class="brand-logo" viewBox="0 0 64 64" aria-hidden="true"><use href="#zyrox-fox"></use></svg>
+            <span class="brand-name">ZYROX<span class="brand-dot">.</span></span>
+          </a>
+          <p>Young entrepreneur &amp; digital product builder from Tetouan, Morocco. Building real projects with friends, one tap at a time.</p>
+          <div class="footer-social">
+            <a href="https://wa.me/212684759180" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.464 3.488"/></svg>
+            </a>
+            <a href="https://instagram.com/sharaf.gym.44" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 0 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
+            </a>
+            <a href="https://tapzio-ma.vercel.app" target="_blank" rel="noopener" aria-label="Tapzio website">
+              <svg class="line" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3A5 5 0 0 0 13 3.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3A5 5 0 0 0 11 20.93l1.5-1.5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tapzio">Tapzio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="https://wa.me/212684759180" target="_blank" rel="noopener">+212 684-759180</a></li>
+            <li><a href="https://wa.me/212726494835" target="_blank" rel="noopener">+212 726-494835</a></li>
+            <li><a href="https://instagram.com/sharaf.gym.44" target="_blank" rel="noopener">@sharaf.gym.44</a></li>
+            <li><a href="https://tapzio-ma.vercel.app" target="_blank" rel="noopener">tapzio-ma.vercel.app</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Zyrox. All rights reserved.</p>
+        <p class="footer-made">Made in Tetouan, Morocco 🇲🇦</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a class="wa-fab" href="https://wa.me/212684759180" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.464 3.488"/></svg>
+    <span class="wa-fab-label">Chat on WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
